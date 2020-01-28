@@ -11,53 +11,79 @@
     <title>David Schneider</title>
 </head>
 <body>
-    <div class="toggle">
-        <div class="title">DAVID SCHNEIDER</div>
-        <i class="fas fa-bars js-toggle" id="menuBars"></i>
+    <div class="mobileHeader">
+        <ul class="mobileNav">
+            <li><a class="toggleTitle" href="#home">DAVID SCHNEIDER</a></li>
+            <li><i class="fas fa-bars js-toggle" id="menuBars"></i></li>
+        </ul>
     </div>
-    <nav class="js-nav">
-        <ul>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+    <nav class="mobileDropdown js-nav">
+        <div class="navTitle">DAVID SCHNEIDER</div>
+        <ul class="menuButtons">
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#experience">EXPERIENCE</a></li>
+            <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
-        <div class="profileWrapper">
-            <!-- <div class="navPics">
-                <a href="https://www.linkedin.com/in/david-jay-schneider/">
-                    <img src="images/github.png">
-                </a>
-                <a href="https://github.com/davschneider">
-                    <img src="images/linkedin.png">
-                </a>
-            </div> -->
-            <img src="images/davidschneider.png">
+    <nav class="desktopHeader">
+        <div class="headerTitle">DAVID SCHNEIDER</div>
+        <ul class="headerButtons">
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#experience">EXPERIENCE</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div class="profileWrapper" id="home">
+        <!-- <div class="description">HI, I'M DAVID</div>
+        <div class="description">AN ATLANTA-BASED SOFTWARE ENGINEER</div> -->
+    </div>
+    <div class="aboutMe">
+        <!-- <img src="images/davidschneider.png"> -->
+        <div class="quickLinks">
+            <a href="https://github.com/davschneider" target="_blank"><img src="./images/github.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/david-jay-schneider/" target="_blank"><img src="./images/icons8-linkedin-64.png" alt="Link"></a>
         </div>
-        <div class="aboutMe">
-            <div class="aboutMeContent">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum fuga soluta mollitia reiciendis odit ex, quas molestiae, numquam iure dignissimos sint accusantium assumenda inventore deserunt reprehenderit ea. Dolores, voluptate!
-            </div>
+
+        <div class="aboutMeContent">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum fuga soluta mollitia reiciendis odit ex, quas molestiae, numquam iure dignissimos sint accusantium assumenda inventore deserunt reprehenderit ea. Dolores, voluptate!
         </div>
-        <div id="skills">
+    </div>
+    <div class="skillsContainer" id="skills">
+        <div class="skillsTitle">
+            <h2>SKILLS</h2>
+        </div>
+        <div class="skillsArray">
             <img src="images/html-5.png">
             <img src="images/css.png">
             <img src="images/icons8-javascript-240.png">
             <img src="images/icons8-nodejs-144.png">
             <img src="images/icons8-postgresql-144.png">
             <img src="images/icons8-react-200.png">
+
         </div>
-        <div id="projects">
-            <div class="projectTitle">
-                <h2>Projects</h2>
-            </div>
-            <div class="projectsArray">
-                <a href="http://mydoppel.surge.sh/"><img src="images/myDoppel.png" alt="myDoppel Project Image"></a>
-                <a href=""><img src="images/fogg-order-completed.png" alt="Backend Project"></a>
-            </div>
+    </div>
+    <div class="experienceContainer" id="experience">
+        <div class="experienceTitle">
+            <h2>EXPERIENCE</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quia eaque voluptates magnam cupiditate dicta! Vitae culpa quia iste corporis. Minus magnam ut expedita architecto fugiat reprehenderit veniam debitis repellat.</p>
         </div>
-        <div class="Contact">
-    
+    </div>
+    <div class="projectsContainer" id="projects">
+        <div class="projectTitle">
+            <h2>PROJECTS</h2>
         </div>
+        <div class="projectsArray">
+            <a href="http://mydoppel.surge.sh/"><img src="images/myDoppel.png" alt="myDoppel Project Image"></a>
+            <a href="https://jeopardy.bentleyherron.dev/"><img src="images/Gameboard.png" alt="Backend Project"></a>
+        </div>
+    </div>
+    <div class="contactContainer" id="contact">
+        <div class="contactTitle">
+            <h2>CONTACT</h2>
+        </div>
+    </div>
 
     </div>
     <script src="index.js"></script>
