@@ -1,34 +1,45 @@
 
 const toggle = document.querySelector('.js-toggle');
 const dropdown = document.querySelector('.js-nav');
+const contact = document.querySelector('.js-contact');
+const contactDropdown = document.querySelector('.js-contactDropdown');
+
 
 let dropdownClicked = false;
+let contactClicked = false;
 
-toggle.addEventListener("click", showDropdown);
-dropdown.addEventListener("click", showDropdown);
+toggle.addEventListener("click", showMenuDropdown);
+dropdown.addEventListener("click", showMenuDropdown);
+contact.addEventListener("click", showContactDropdown);
 
-function showDropdown() {
-    if (!screenSize.matches) {
-        dropdownClicked = !dropdownClicked;
-        console.log('button clicked');
-        if (dropdownClicked === true) {
-            dropdown.style = "display: flex;";
-        } else {
-            dropdown.style = "display: none;";
-        }
-    }
-}
-
-var screenSize = window.matchMedia("(min-width: 400px)")
-
-function disableDropdown(screenSize) {
-    if (screenSize.matches) {
-        console.log(`Screen bigger than 400px`);
-        dropdownClicked = false;
+function showMenuDropdown() {
+    dropdownClicked = !dropdownClicked;
+    if (dropdownClicked === true) {
+        contactDropdown.style = "display: none;";
+        dropdown.style = "display: flex;";
     } else {
-        console.log(`Screen smaller than 400px`);
+        dropdown.style = "display: none;";
     }
 }
 
-disableDropdown(screenSize);
-screenSize.addListener(disableDropdown);
+function showContactDropdown() {
+    contactClicked = !contactClicked;
+    if (contactClicked === true) {
+        dropdown.style = "display: none;";
+        contactDropdown.style = "display: flex;";
+    } else {
+        contactDropdown.style = "display: none;";
+    }
+}
+
+// var screenSize = window.matchMedia("(min-width: 400px)")
+
+// function disableDropdown(screenSize) {
+//     if (screenSize.matches) {
+//         console.log(`Screen bigger than 400px`);
+//         dropdownClicked = false;
+//     } else {
+//         console.log(`Screen smaller than 400px`);
+//     }
+// }
+
