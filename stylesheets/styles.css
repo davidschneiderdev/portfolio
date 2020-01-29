@@ -80,7 +80,7 @@ html, body {
 }
 
 .menuButtons li {
-    padding: 50px;
+    padding: 60px;
     text-decoration: none;
 }
 
@@ -136,14 +136,18 @@ html, body {
 
 .contactLinks {
     display: flex;
-    width: 30%;
+    width: 50%;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .contactLinks a i {
     color: white;
-    font-size: 50px;
+    font-size: 65px;
+}
+
+.contactElement:hover {
+    color: lightgray;
 }
 
 
@@ -406,15 +410,9 @@ footer {
         scroll-snap-align: center;
     }
 
-    /* .backgroundText {
-        height: 100%;
-        font-size: 20rem;
-        font-weight: 900;
-        color: rgba(0, 0, 0, 0.04);
-        position: absolute;
-        top: 20%;
-        left: 20%;
-    } */
+    .menuButtons {
+        justify-content: center;
+    }
 
     .skillElement > img {
         max-height: 120px;
