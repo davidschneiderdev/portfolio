@@ -90,10 +90,12 @@ html, body {
 
 .menuElement {
     text-decoration: none;
+    border-bottom: 1px solid white;
+
 }
 
 .menuElement:hover {
-    color: gray;
+    color: lightgray;
 }
 
 .contactDropdown {
