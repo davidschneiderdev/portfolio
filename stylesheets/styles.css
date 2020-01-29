@@ -230,7 +230,24 @@ html, body {
     justify-content: center;
     align-items: center;
     font-size: 19px;
-    font-family: 'Roboto', sans-serif
+    font-family: 'Roboto', sans-serif;
+}
+
+.aboutContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100%;
+    margin: 100px 0 100px 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.aboutSubContainer {
+    width: 50%;
 }
 
 .sectionTitle {
@@ -245,6 +262,23 @@ html, body {
 .sectionContent {
     width: 70%;
     text-align: left;
+}
+
+.profilePicture {
+    width: 20%;
+    min-width: 300px;
+    height: auto;
+    
+}
+
+.profilePicture > img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.aboutContent {
+    min-width: 250px;
 }
 
 
