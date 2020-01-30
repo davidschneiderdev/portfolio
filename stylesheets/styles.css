@@ -1,7 +1,7 @@
 
 * {
     box-sizing: border-box;
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 
 html, body {
@@ -300,6 +300,7 @@ html, body {
     align-items: center;
     font-size: 19px;
     font-family: 'Roboto', sans-serif;
+    /* border-bottom: .5px solid lightgray; */
 }
 
 .aboutContainer {
@@ -313,10 +314,21 @@ html, body {
     align-items: center;
     font-size: 19px;
     font-family: 'Roboto', sans-serif;
+    /* border-bottom: .5px solid lightgray; */
 }
 
 .aboutSubContainer {
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    width: 90%;
+}
+
+.aboutContent {
+    /* min-width: 250px; */
+    width: 90%;
+    text-align: left;
 }
 
 .sectionTitle {
@@ -345,11 +357,6 @@ html, body {
     border-radius: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-.aboutContent {
-    min-width: 250px;
-}
-
 
 .skillsContainer {
     display: flex;
@@ -521,6 +528,12 @@ footer {
 
     .menuButtons {
         justify-content: center;
+    }
+
+    .aboutSubContainer {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
     }
 
     .skillElement > img {
