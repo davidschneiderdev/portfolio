@@ -409,7 +409,7 @@ html, body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .experienceElement {
@@ -417,15 +417,17 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 450px;
+    height: 300px;
+    margin: 15px;
 }
 
 .experienceImage {
     display: flex;
     align-items: center;
-    width: 300px;
-    height: 300px;
-    padding: 50px;
+    width: 220px;
+    height: 220px;
+    padding: 40px;
+    margin-bottom: 15px;
     /* border: 1px black solid; */
     border-radius: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -437,6 +439,15 @@ html, body {
 
 .workTitle {
     color: gray;
+    font-size: 15px;
+}
+
+.workDates {
+    font-size: 15px;
+}
+
+.workLocation {
+    font-size: 15px;
 }
 
 .projectsArray {
