@@ -11,46 +11,48 @@
     <title>David Schneider</title>
 </head>
 <body>
-    
     <div class="wrapper">
-        <div class="mobileHeader">
-            <ul class="mobileNav">
-                <li><i class="fas fa-bars js-toggle"></i></li>
-                <li><i class="far fa-envelope js-contact"></i></li>
-            </ul>
-        </div>
-        <nav class="mobileDropdown js-nav">
-            <ul class="menuButtons">
-                <li><a class="menuElement" href="#skills">SKILLS</a></li>
-                <li><a class="menuElement" href="#experience" id="lastElement">EXPERIENCE</a></li>
-                <li><a class="menuElement" href="#projects">PROJECTS</a></li>
-                <li><a class="menuElement" href="davidSchneiderResume.pdf" target="_blank">SEE FULL RESUME</a></li>
-            </ul>
-        </nav>
-        <nav class="contactDropdown js-contactDropdown">
-            <div class="contactContainer">
-                <div class="contactContent">
-                    <h1>Let's create something great!</h1>
-                    <h2>Contact me on the following</h2>
-                    <div class="contactLinks">
-                        <a href="https://github.com/davschneider" target="_blank"><i class="fab fa-github contactElement"></i></a>
-                        <a href="https://www.linkedin.com/in/david-jay-schneider/" target="_blank"><i class="fab fa-linkedin contactElement"></i></a>
-                        <a href="mailto:david.jay.schneider@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-at contactElement"></i></a>
+        <div class="headerContainer">
+            <div class="mobileHeader">
+                <ul class="mobileNav">
+                    <li><i class="fas fa-bars js-toggle"></i></li>
+                    <li><i class="far fa-envelope js-contact"></i></li>
+                </ul>
+            </div>
+            <nav class="mobileDropdown js-nav">
+                <ul class="menuButtons">
+                    <li><a class="menuElement" href="#aboutMe">ABOUT ME</a></li>
+                    <li><a class="menuElement" href="#skills">SKILLS</a></li>
+                    <li><a class="menuElement" href="#experience" id="lastElement">EXPERIENCE</a></li>
+                    <li><a class="menuElement" href="#projects">PROJECTS</a></li>
+                    <li><a class="menuElement" href="davidSchneiderResume.pdf" target="_blank">SEE FULL RESUME</a></li>
+                </ul>
+            </nav>
+            <nav class="contactDropdown js-contactDropdown">
+                <div class="contactContainer">
+                    <div class="contactContent">
+                        <h1>Let's create something great!</h1>
+                        <h2>Contact me on the following</h2>
+                        <div class="contactLinks">
+                            <a href="https://github.com/davschneider" target="_blank"><i class="fab fa-github contactElement"></i></a>
+                            <a href="https://www.linkedin.com/in/david-jay-schneider/" target="_blank"><i class="fab fa-linkedin contactElement"></i></a>
+                            <a href="mailto:david.jay.schneider@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-at contactElement"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
-
+            </nav>
+        </div>
         <div class="profileWrapper scrollChild" id="home">
             <div class="profileTitles">
                 <div class="profileName">DAVID SCHNEIDER</div>
                 <div class="profileSubTitle">SOFTWARE ENGINEER</div>
             </div>
             <div class="downArrow bounce">
+                <p>Scroll To Explore</p>
                 <i class="fas fa-chevron-down scrollCue"></i>
             </div>
         </div>
-        <div class="aboutContainer scrollChild">
+        <div class="aboutContainer scrollChild" id="aboutMe">
             <div class="aboutSubContainer">
                 <div class="sectionTitle">
                     <h2>ABOUT ME</h2>
@@ -142,6 +144,7 @@
                     <div class="workTitle">Psychology Research Assistant</div>
                 </div>
             </div>
+            <a class="resumeLink" href="davidSchneiderResume.pdf" target="_blank">See Full Resume</a>
         </div>
         <div class="sectionContainer scrollChild" id="projects">
             <div class="sectionTitle">
@@ -174,7 +177,14 @@
             </div>
         </div>
         <footer>
-
+            <div class="scrollIndicatorContainer">
+                <div class="scrollIndicatorCircle">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
         </footer>
     </div>
     <script src="index.js"></script>
