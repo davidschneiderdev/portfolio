@@ -13,11 +13,21 @@
 <body>
     <div class="wrapper">
         <div class="headerContainer">
-            <div class="mobileHeader">
+            <div class="mobileHeader js-mobileHeader">
                 <ul class="mobileNav">
                     <li><i class="fas fa-bars js-toggle"></i></li>
-                    <li><i class="far fa-envelope js-contact"></i></li>
+                    <li><i class="far fa-envelope js-mobileContact"></i></li>
                 </ul>
+            </div>
+            <div class="desktopHeader js-desktopHeader">
+                <ul class="desktopNav">
+                    <li><a href="#aboutMe">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a class="js-desktopContact">Contact</a></li>
+                </ul>
+                <!-- <i class="far fa-envelope js-contact"></i> -->
             </div>
             <nav class="mobileDropdown js-nav">
                 <ul class="menuButtons">
@@ -49,7 +59,7 @@
             </div>
             <div>
                 <!-- <p>Scroll To Explore</p> -->
-                <div class="mouse-icon"><div class="wheel"></div></div>
+                <!-- <div class="mouse-icon"><div class="wheel"></div></div> -->
                 <!-- <i class="fas fa-chevron-down scrollCue"></i> -->
             </div>
         </div>
@@ -73,7 +83,7 @@
                 <img src="images/davidschneider.png">
             </div>
         </div>
-        <div class="sectionContainer scrollChild" id="skills">
+        <div class="sectionContainer skillsContainer scrollChild" id="skills">
             <div class="sectionTitle">
                 <h2>SKILLS</h2>
             </div>
@@ -91,24 +101,32 @@
                     <div class="skillTitle">JavaScript</div>
                 </li>
                 <li class="skillElement">
-                    <img class="skillImage" src="images/python.png">
-                    <div class="skillTitle">Python</div>
-                </li>
-                <li class="skillElement">
                     <img class="skillImage" src="images/icons8-react-200.png">
                     <div class="skillTitle">React</div>
                 </li>
                 <li class="skillElement">
-                    <img class="skillImage" src="images/iconfinder_redux_4691205.png">
+                    <img class="skillImage" src="images/iconfinder_redux_4691205.png" style="color: red;">
                     <div class="skillTitle">Redux</div>
                 </li>
                 <li class="skillElement">
                     <img class="skillImage" src="images/icons8-nodejs-144.png">
-                    <div class="skillTitle">NodeJS</div>
+                    <div class="skillTitle">Node</div>
+                </li>
+                <li class="skillElement">
+                    <img class="skillImage" src="images/expressjslogo.png">
+                    <div class="skillTitle">Express</div>
                 </li>
                 <li class="skillElement">
                     <img class="skillImage" src="images/icons8-postgresql-144.png">
                     <div class="skillTitle">PostGres</div>
+                </li>
+                <li class="skillElement">
+                    <img class="skillImage" src="images/python.png">
+                    <div class="skillTitle">Python</div>
+                </li>
+                <li class="skillElement">
+                    <img class="skillImage" src="images/icons8-amazon-web-services-96.png">
+                    <div class="skillTitle">Amazon Web Services</div>
                 </li>
                 <li class="skillElement">
                     <img class="skillImage" src="images/icons8-github-100.png">
@@ -156,21 +174,38 @@
                 <h2>PROJECTS</h2>
             </div>
             <div class="projectsArray">
-            <div class="projectElement">
-                <img src="images/Gameboard.png" alt="myDoppel Project" class="projectImage">
-                <div class="overlay">
-                    <div class="projectText">
-                        <!-- <h2>Jeopardy App</h2>
-                        <p>Technologies Employed: ExpressJS, PostGres, JavaScript, CSS</p> -->
-                        <a href="https://jeopardy.bentleyherron.dev/" target="_blank">Live Site</a>
-                        <a href="https://github.com/davschneider/jeopardy" target="_blank">GitHub</a>
-                        
+                <div class="projectElement">
+                    <a href="https://jeopardy.bentleyherron.dev/" target="_blank"><img src="images/Gameboard.png" alt="myDoppel Project" class="projectImage">
+                    </a>
+                    
+                    <div class="overlay">
+                        <div class="projectText">
+                            <!-- <h2>Jeopardy App</h2>
+                            <p>Technologies Employed: ExpressJS, PostGres, JavaScript, CSS</p> -->
+                            <a href="https://jeopardy.bentleyherron.dev/" target="_blank">Live Site</a>
+                            <a href="https://github.com/davschneider/jeopardy" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="projectDescription">
+                        <p>
+                            Project: Jeopardy App 
+                            <br/>
+                            <br/>
+                            Jeopardy llows the user to select and play Jeopardy episodes from an archive of past episodes and over 200,000 questions. The application backend logs episodes played, game statistics and ranks players on a leaderboard. 
+                            <br/>
+                            <br/>
+                            Technologies employed: JavaScript, ExpressJs and Postgres.
+                            <br/>
+                            <br/>
+                            <a href="https://jeopardy.bentleyherron.dev/" target="_blank">Live Site</a>
+                            <a href="https://github.com/davschneider/jeopardy" target="_blank">GitHub</a>
+                        </p>
                     </div>
                 </div>
-            </div>
-            
                 <div class="projectElement">
-                    <img src="images/myDoppel.png" alt="myDoppel Project" class="projectImage">
+                    <a href="http://mydoppel.surge.sh/" target="_blank">
+                        <img src="images/myDoppel.png" alt="myDoppel Project" class="projectImage">
+                    </a>
                     <div class="overlay">
                         <div class="projectText">
                             <!-- <h2>myDoppel Facematcher</h2>
@@ -179,19 +214,34 @@
                             <a href="https://github.com/davschneider/myDoppel" target="_blank">GitHub</a>
                         </div>
                     </div>
+                    <div class="projectDescription">
+                        <p>
+                            Project: myDoppel App 
+                            <br/>
+                            <br/>
+                            myDoppel allows users to discover their character doppelganger from a selection of today's most popular TV shows. The app utilizes faceAPi and TV-Maze API to run rapid facial comparison.
+                            <br/>
+                            <br/>
+                            Technologies employed: JavaScript,  API fetching and DOM Manipulation.
+                            <br/>
+                            <br/>
+                            <a href="http://mydoppel.surge.sh/" target="_blank">Live Site</a>
+                            <a href="https://github.com/davschneider/myDoppel" target="_blank">GitHub</a>
+                        </div>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- <footer>
-            <div class="scrollIndicatorContainer">
-                <div class="scrollIndicatorCircle">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
+        <footer>
+            <div class="footerContent">
+                <p>David Schneider</p>
+                <div class="linkBar">
+                    <a href="https://github.com/davschneider" target="_blank"><i class="fab fa-github contactElement"></i></a>
+                    <a href="https://www.linkedin.com/in/david-jay-schneider/" target="_blank"><i class="fab fa-linkedin contactElement"></i></a>
+                    <a href="mailto:david.jay.schneider@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-at contactElement"></i></a>
                 </div>
             </div>
-        </footer> -->
+        </footer>
     </div>
     <script src="index.js"></script>
 </body>
