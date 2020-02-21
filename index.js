@@ -3,9 +3,11 @@ const toggle = document.querySelector('.js-toggle');
 const mobileHeader = document.querySelector('.js-mobileHeader');
 const desktopHeader = document.querySelector('.js-desktopHeader');
 const dropdown = document.querySelector('.js-nav');
+const desktopNav = document.querySelector('.js-desktopNav');
 const mobileContact = document.querySelector('.js-mobileContact');
 const desktopContact = document.querySelector('.js-desktopContact');
 const contactDropdown = document.querySelector('.js-contactDropdown');
+const navNonContact = document.querySelector('.js-navNonContact');
 
 
 let dropdownClicked = false;
@@ -15,7 +17,11 @@ toggle.addEventListener("click", showMenuDropdown);
 dropdown.addEventListener("click", showMenuDropdown);
 mobileContact.addEventListener("click", showContactDropdown);
 desktopContact.addEventListener("click", showContactDropdown);
+navNonContact.addEventListener("click", closeContactDropdown);
 
+function clicked() {
+    console.log('header clicked');
+}
 
 function showMenuDropdown() {
     dropdownClicked = !dropdownClicked;
@@ -28,35 +34,32 @@ function showMenuDropdown() {
         dropdown.style = "display: none;";
         mobileHeader.style = "background-color: none;"
         desktopHeader.style = "background-color: none;"
-        
-
     }
 }
 
 function showContactDropdown() {
-    console.log('contact clicked');
     contactClicked = !contactClicked;
     if (contactClicked === true) {
         dropdown.style = "display: none;";
         contactDropdown.style = "display: flex;";
         mobileHeader.style = "background-color: rgba(50, 103, 113, 1);"
         desktopHeader.style = "background-color: rgba(50, 103, 113, 1);"
-
+        mobileContact.className -= "far fa-envelope";
+        mobileContact.className = "fas fa-times";
+        desktopContact.textContent = `Close Contact X`;
     } else {
         contactDropdown.style = "display: none;";
         mobileHeader.style = "background-color: none;"
         desktopHeader.style = "background-color: none;"
+        mobileContact.className = "far fa-envelope";
+        desktopContact.textContent = 'Contact';
     }
 }
 
-// var screenSize = window.matchMedia("(min-width: 400px)")
+function closeContactDropdown() {
+    if (contactClicked === true) {
+        showContactDropdown()
+    }
+}
 
-// function disableDropdown(screenSize) {
-//     if (screenSize.matches) {
-//         console.log(`Screen bigger than 400px`);
-//         dropdownClicked = false;
-//     } else {
-//         console.log(`Screen smaller than 400px`);
-//     }
-// }
 
