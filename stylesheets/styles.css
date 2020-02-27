@@ -520,6 +520,10 @@ html, body {
 
 /* Projects Section */
 
+#projects {
+    margin-bottom: 250px;
+}
+
 .projectsArray {
     display: flex;
     flex-direction: column;
