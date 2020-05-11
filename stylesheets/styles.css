@@ -464,6 +464,7 @@ html, body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .experienceElement {
@@ -835,6 +836,10 @@ footer {
     .projectDescription p {
         margin: 0;
         color: var(--text-color);
+    }
+
+    .experienceArray {
+        width: 60%;
     }
 
 }
